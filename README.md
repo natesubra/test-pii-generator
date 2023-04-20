@@ -30,7 +30,7 @@ PS > $sample[0]
 FirstName            : Bria
 LastName             : Farrell
 Email                : briameek@roundsoft.au
-Phone                : 69-126-7921
+Phone                : (812) 617-5120
 Address              : 135 Docxiguy Coves
 City                 : Greensboro
 State                : Maine
