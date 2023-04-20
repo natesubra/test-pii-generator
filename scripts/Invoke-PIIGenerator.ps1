@@ -60,6 +60,19 @@ begin {
         }
     }
 
+    function Get-FakeUSPhoneNumber {
+        # Generate a random fake US phone number
+        $areaCode = Get-Random -Minimum 201 -Maximum 999
+        $exchange = Get-Random -Minimum 201 -Maximum 999
+        $lineNumber = Get-Random -Minimum 1000 -Maximum 9999
+
+        # Format the phone number
+        $phoneNumber = "{0:(###) ###-####}" -f ($areaCode * 10000000 + $exchange * 10000 + $lineNumber)
+
+        # Return the phone number
+        return $phoneNumber
+    }
+
     function Get-RandomSSN {
         $area = Get-Random -Minimum 1 -Maximum 899
         $group = Get-Random -Minimum 1 -Maximum 99
@@ -87,7 +100,7 @@ process {
             'Invoke-Generate:Culture' = $Culture
         }
 
-        $row = Invoke-Generate '[person both first],[person both last],email,[numeric 3]-[numeric 3]-[numeric 4],[address],[city],[state],[postalcode],ssn,[randomdate 1/1/1940 12/31/2020],creditcard,creditcardexpiration,creditcardccv,creditcardtype,[company],[job]'
+        $row = Invoke-Generate '[person both first],[person both last],email,phone,[address],[city],[state],[postalcode],ssn,[randomdate 1/1/1940 12/31/2020],creditcard,creditcardexpiration,creditcardccv,creditcardtype,[company],[job]'
         $identity = [string[]]($header + [System.Environment]::NewLine + $row) | ConvertFrom-Csv
 
         # Add some randomnness to email generation
@@ -103,7 +116,8 @@ process {
                 $identity.email = $identity.FirstName.tolower() + (Invoke-Generate "[adjective]").tolower() + '@' + (Invoke-Generate "[adjective][adjective]").tolower() + ($TLDs | Get-Random -Count 1)
             }
         }
-        
+
+        $identity.Phone = Get-FakeUSPhoneNumber
         $identity.SSN = Get-RandomSSN
 
         $CCTemp = Get-RandomCreditCardNumber
