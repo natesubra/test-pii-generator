@@ -25,15 +25,17 @@ Slow, terrible. But it works.
 Generating 50 PII records
 Generated 50 PII records in: 4.4378098 seconds
 
-FirstName LastName Email                                 Phone        Address                    City              State          Zip   SSN         Birthday
---------- -------- -----                                 -----        -------                    ----              -----          ---   ---         --------
-Chase     Strong   chaserural@drabfull.au                695-944-3378 32869 Neuw Walks           Ewing             New Jersey     44138 877-92-6380 10/5/2015
-Bria      Roach    bria.roach@aspiringknown.biz          206-335-6380 244 Emjeirpoxil Forks      Vredenburgh       New York       30375 487-73-3222 10/11/2019
-Ean       Francis  eannatural@dashingfertile.it          19-537-5158  7237 Feujru Pl             Franklin          Maine          96807 813-18-9335 8/21/1993
-Ramon     Jacobson ramonwaiting@meekhomeless.info        23-795-6182  7148 Ifudnabes Canyn       East Worcester    Florida        89503 729-17-2763 8/26/1959
-Odin      Moses    odin.moses@eminentagreeable.eu        226-119-8830 9412 Miac Clb              Yauco             Colorado       63119 391-31-9023 8/18/1994
-Jude      Riggs    judeuninterested@iratecurly.com       287-765-1196 80967 Enpe Trace           Sand Lake         Utah           44162 592-37-9042 10/12/1985
-Eva       Wolf     eva.wolf@yahoo.com                    353-38-5033  31329 Hamaqdarumte Trail   Waddington        Kentucky       44162 240-34-3985 10/1/1998
-Delilah   Farrell  delilah.farrell@yahoo.com             990-518-9643 18382 Mozcuqohot Shoar     Freeport          Tennessee      33184 528-75-7697 11/21/2001
+
+
+FirstName               LastName                Email                   Phone                   Address                 City                   State                  Zip                    SSN                    Birthday
+---------               --------                -----                   -----                   -------                 ----                   -----                  ---                    ---                    --------
+Litzy                   White                   litzybusy@giantobnoxioΓÇª 501-900-5350            144 Dealaclaul Path     Sardinia               South Carolina         74105                  229-34-8083            4/8/1967
+Julio                   Bowers                  juliointernal@successfΓÇª 417-63-5488             501 Guwifif Riv         Lovettsville           Arkansas               10046                  788-40-5000            2/26/1992
+Reece                   Vance                   reeceancient@thoughtfuΓÇª 611-837-6413            77108 Jolyobjeg Anex    Stantonville           Missouri               44124                  263-47-7764            10/21/2016
+Julie                   Howe                    julie.howe@crazymarkedΓÇª 560-958-8340            93373 Vekasdac Jct      West Palm Beach        Indiana                33184                  687-08-0337            3/29/1956
+Amari                   Diaz                    amariutopian@rainyneedΓÇª 728-918-9224            157 Sobaplawkid Track   Kendallville           West Virginia          50303                  222-54-3082            3/11/1974
+Elliana                 Stevenson               elliana.stevenson@enthΓÇª 277-876-5540            12952 Nipukulinol CrosΓÇª Point Pleasant         Oregon                 44119                  217-03-0888            4/14/1982
+Kelton                  Miller                  keltonenergetic@madlydΓÇª 329-86-2092             465 Jixuscexozfa HighwΓÇª Laurel                 New Hampshire          10008                  269-31-2900            6/8/1963
+Waylon                  Huber                   waylon.huber@awarecowaΓÇª 288-275-4435            6059 Kowi Loop          Milton                 Colorado               74106                  366-52-7186            11/26/1996
 <snip>
 ```
