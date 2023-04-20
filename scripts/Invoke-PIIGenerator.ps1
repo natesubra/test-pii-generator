@@ -118,14 +118,15 @@ process {
 }
 
 end {
+    if ($v) {
+        $timer.Stop()
+        Write-Host "Generated $PIICount PII records in: $($timer.Elapsed.TotalSeconds) seconds"
+    }
+
     if ($GenerateCSV) {
         $list | Export-Csv -Path $OutputFile -NoTypeInformation
     }
     else {
         return $list
-    }
-    if ($v) {
-        $timer.Stop()
-        Write-Host "Generated $PIICount PII records in: $($timer.Elapsed.TotalSeconds) seconds"
     }
 }
